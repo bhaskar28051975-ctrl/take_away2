@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vana Bhojanam Food – Take Away</title>
+<style>
+  :root {
+    --accent: #007b5e;
+    --dark: #053b2e;
+    --card-bg: rgba(255, 255, 255, 0.96);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f2f6f3;
+    color: #111;
+  }
+  header {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBhWOhzzmajeBbI63FHOpZ8dRxyE_Md3Xn42blFYV_DmMzoxeINKXvjhA&s');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+  }
+  header .inner {
+    position: relative;
+    z-index: 1;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #ffe97f;
+  }
+  header h2 {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+  }
+  header h3 {
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #d9f7e9;
+  }
+  header h4 {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff3b0;
+  }
+  .container {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 0 12px;
+  }
+  .intro {
+    background: var(--card-bg);
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card .body {
+    padding: 12px;
+    flex: 1;
+  }
+  .card h3 {
+    margin: 6px 0;
+    font-size: 18px;
+    color: var(--dark);
+  }
+  .card p {
+    margin: 4px 0;
+    color: #444;
+    font-size: 14px;
+  }
+  .price {
+    font-weight: 700;
+    margin-top: 6px;
+  }
+  .btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 9px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 8px;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: #045f47;
+  }
+  .cart {
+    background: var(--card-bg);
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  footer {
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  select, button, input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 6px;
+    width: 100%;
+  }
+  button.orderBtn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 10px 16px;
+    border-radius: 8px;
+  }
+  button.orderBtn:hover {
+    background: #045f47;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <h1>NANDU CATERING</h1>
+    <h2>VANA BHOJANAM FOOD</h2>
+    <h3>TAKE AWAY</h3>
+    <h4>Contact: 089193 47009</h4>
+  </div>
+</header>
+
+<div class="container">
+  
+<div class="intro">
+  Welcome to <b>Vana Bhojanam Food!</b> 🍃  
+  Choose your favourite meals, select delivery point, and place your order directly via WhatsApp.
+  <hr style="margin:10px 0;">
+  <p style="font-size:15px; line-height:1.6; color:#064e3b;">
+  ప్రియమైన భక్తులారా,<br>
+  దయచేసి <b>వన భోజనమ్ ఫుడ్</b> తీసుకుని అలిపిరి నుండి తిరుమల వరకు ఉన్న అరణ్యప్రాంతంలో ఆహ్లాదకరమైన వాతావరణంలో భోజనం చేయండి.<br>
+  సాంప్రదాయ ఆంధ్ర వంటకాల రుచిని ఆస్వాదించి, ఈ పవిత్ర ప్రయాణంలో మరపురాని అనుభూతిని పొందండి.<br>
+  సుభ దర్శనం చేసుకొని సురక్షితంగా ఇంటికి చేరండి.
+  </p>
+</div>
+
+  <div class="grid" id="menuGrid"></div>
+
+  <div class="cart">
+    <h3>🧺 Your Cart</h3>
+    <ul id="cartList"></ul>
+    <p><b>Total Amount:</b> ₹<span id="total">0</span></p>
+
+    <label for="custName"><b>Your Name:</b></label>
+    <input type="text" id="custName" placeholder="Enter your name">
+
+    <label for="custPhone"><b>Phone Number:</b></label>
+    <input type="tel" id="custPhone" placeholder="Enter your phone number">
+
+    <label for="location"><b>Delivery Location:</b></label>
+    <select id="location">
+      <option value="">-- Select Delivery Point --</option>
+      <option value="Alipiri">Alipiri</option>
+      <option value="Sree Vari Metlu">Sree Vari Metlu</option>
+      <option value="TTD Free Bus Stop">TTD Free Bus Stop</option>
+    </select><br>
+    
+    <button class="orderBtn" onclick="placeOrder()">📱 Order on WhatsApp</button>
+  </div>
+
+  <footer>
+    Payment: Cash / WhatsApp | Order Helpline: 9154095125 <br>
+    Powered by <b>BR Info Pvt Ltd</b>
+  </footer>
+</div>
+
+<script>
+const phone = "9154095125";
+const items = [
+  { name: "Lemon Rice with Chilli Powder", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBhWOhzzmajeBbI63FHOpZ8dRxyE_Md3Xn42blFYV_DmMzoxeINKXvjhA&s", desc: "Tangy and aromatic lemon rice served with spicy chilli powder.", price: 1 },
+  { name: "Lemon Rice with Brinjal Fry", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XSzLamA2fCrPPRGqQBg3_3u9C3MTfMdXoFWypJqDU3BpDAU2KIn7QW8&s", desc: "Classic lemon rice paired with brinjal fry, homely taste.", price: 1 },
+  { name: "Lemon Rice with Potato Fry", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kMrQdFd7w8NQXGJmun5lL_gJuDf8tREN8Uz4tJQVz81vGJAx3pf91V0&s=10", desc: "Zesty lemon rice complemented with crispy potato fry.", price: 1 },
+  { name: "Karam Papu (Spicy Dal)", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcResloLgMBsbyXAGC5dGcIaYKL33Bk00IoHJOM433psSQ&s", desc: "Rich and spicy lentil curry made Andhra-style.", price: 1 },
+  { name: "White Rice with Alu Curry", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDbOBXqYP5mdXKmmtfJj4Ulj804j8i0hXOzHGtsQW49g&s", desc: "Steamed white rice served with potato curry, simple and tasty.", price: 1 }
+];
+
+let cart = [];
+
+function updateCart(){
+  const cartList=document.getElementById('cartList');
+  cartList.innerHTML="";
+  let total=0;
+  cart.forEach((item)=>{
+    const li=document.createElement('li');
+    li.textContent=`${item.name} - ₹${item.price}`;
+    cartList.appendChild(li);
+    total += item.price;
+  });
+  document.getElementById('total').textContent=total;
+}
+
+function addToCart(index){
+  cart.push(items[index]);
+  updateCart();
+}
+
+function placeOrder(){
+  const name = document.getElementById('custName').value.trim();
+  const phoneInput = document.getElementById('custPhone').value.trim();
+  const location = document.getElementById('location').value;
+  if(cart.length===0){alert("Please add at least one item!");return;}
+  if(!name){alert("Please enter your name!");return;}
+  if(!phoneInput){alert("Please enter your phone number!");return;}
+  if(!location){alert("Please select a delivery location!");return;}
+  const list = cart.map(i=>`• ${i.name} (₹${i.price})`).join('%0A');
+  const total = document.getElementById('total').textContent;
+  const message = `🌿 VANA BHOJANAM ORDER 🌿%0A%0A👤 Name: ${name}%0A📞 Phone: ${phoneInput}%0A📍 Location: ${location}%0A%0A${list}%0A%0ATotal: ₹${total}%0AThank you for choosing Nandu Catering!`;
+  window.open(`https://wa.me/${phone}?text=${message}`,'_blank');
+}
+
+const grid = document.getElementById('menuGrid');
+items.forEach((p,i)=>{
+  const card=document.createElement('div');
+  card.className='card';
+  card.innerHTML=`
+    <img src="${p.img}" alt="${p.name}">
+    <div class="body">
+      <h3>${p.name}</h3>
+      <p>${p.desc}</p>
+      <p class="price">₹${p.price}</p>
+      <button class="btn" onclick="addToCart(${i})">Add to Cart</button>
+    </div>`;
+  grid.appendChild(card);
+});
+</script>
+
+</body>
+</html>
